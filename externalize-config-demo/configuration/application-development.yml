@@ -1,6 +1,7 @@
 application:
   property4: "Development environment specific value"
   property5: "Development environment specific value"
+
 aws:
   s3:
     bucket: "dev-bucket"

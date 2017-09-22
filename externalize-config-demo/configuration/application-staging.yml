@@ -1,6 +1,7 @@
 application:
   property4: "Staging environment specific value"
   property5: "Staging environment specific value"
+
 aws:
   s3:
     bucket: "stage-bucket"

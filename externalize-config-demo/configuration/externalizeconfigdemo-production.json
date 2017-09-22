@@ -1,0 +1,14 @@
+{
+  "application": {
+    "property4": "Production environment specific value for property 4",
+    "property5": "Production environment specific Value for property 5"
+  },
+  "aws": {
+    "s3": {
+      "bucket": "prod-bucket",
+    },
+    "firehose": {
+      "deliveryStream": "prod-deliverystream",
+    }
+  }
+}

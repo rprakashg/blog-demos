@@ -14,8 +14,9 @@ COPY entrypoint.sh /
 
 COPY --from=builder /projects/java/externalize-config-demo/target/*.jar app.jar
 
-RUN apk add --update bash jq wget && rm -rf /var/cache/apk/* \
+RUN apk add --update bash wget && rm -rf /var/cache/apk/* \
     && bash -c 'touch /app.jar' \
+    && mkdir configs \
     && chmod 700 /entrypoint.sh
 
 ENTRYPOINT ["./entrypoint.sh"]

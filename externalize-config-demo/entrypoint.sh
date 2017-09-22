@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 echo "Downloading configuration files from git repository"
-wget  $GIT_REPO/$LABEL/$PATH/$APP_NAME.json
-wget  $GIT_REPO/$LABEL/$PATH/$APP_NAME-$PROFILE.json
+wget  $GIT_REPO/$LABEL/$PATH/$APP_NAME.yml
+wget  $GIT_REPO/$LABEL/$PATH/$APP_NAME-$PROFILE.yml
 
-cp $APP_NAME.json ./configs/$APP_NAME.json
-cp $APP_NAME-$PROFILE.json ./configs/$APP_NAME-$PROFILE.json
+cp $APP_NAME.yml ./configs/$APP_NAME.yml
+cp $APP_NAME-$PROFILE.yml ./configs/$APP_NAME-$PROFILE.yml
 
 CMD=$1
 echo "Command :" $CMD

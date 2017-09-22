@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-docker run -d -p 80:8080 -e PROFILE=production -e GIT_REPO="https://github.com/rprakashg/blog-demos" \
-    -e LABEL=master -e PATH="/blob/master/externalize-config-demo/configuration/" \
+docker run -d -p 80:8080 -e PROFILE=production -e GIT_REPO="https://raw.githubusercontent.com/rprakashg/blog-demos" \
+    -e LABEL=master -e REL_PATH="externalize-config-demo/configuration" \
     -e APP_NAME="application" rprakashg/externalize-config-demo .

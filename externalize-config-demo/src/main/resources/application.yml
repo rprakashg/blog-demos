@@ -1,0 +1,13 @@
+application:
+  property1:
+  property2:
+  property3:
+  property4:
+  property5:
+aws:
+  s3:
+    bucket:
+    region:
+  firehose:
+    deliveryStream:
+    region:
